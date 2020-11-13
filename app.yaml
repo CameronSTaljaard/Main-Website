@@ -17,6 +17,5 @@
 runtime: python27
 api_version: 1
 threadsafe: true
-handlers:
-- url: /
+
 # [END gae_quickstart_yaml]
