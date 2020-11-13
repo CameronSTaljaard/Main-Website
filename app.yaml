@@ -11,11 +11,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START gae_quickstart_yaml]
+[START runtime]
+runtime: nodejs12
+handlers:
+- url: /
+static_files: dist/index.html
+upload: dist/index.html
+- url: / static_dir: dist#
+[END runtime]
 
-# runtime: nodejs12
-
-# [START runtime]
-runtime: nodejs8handlers:- url: / static_files: dist/index.html upload: dist/index.html- url: / static_dir: dist# [END runtime]
-
-# [END gae_quickstart_yaml]
