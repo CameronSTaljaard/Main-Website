@@ -14,8 +14,11 @@
 # [START gae_quickstart_yaml]
 # runtime: nodejs12
 
-runtime: python27
-api_version: 1
-threadsafe: true
-
+[START runtime]
+runtime: nodejs12
+handlers:- url: /
+static_files: dist/index.html
+upload: dist/index.html
+ - url: /
+static_dir: dist# [END runtime]
 # [END gae_quickstart_yaml]
