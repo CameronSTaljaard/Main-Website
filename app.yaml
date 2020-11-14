@@ -16,6 +16,7 @@ runtime: nodejs12
 handlers:
 - url: /
   static_files: dist/my-site/index.html
+  secure: always
   upload: dist/my-site/index.html
 - url: /
   static_dir: dist/my-site
