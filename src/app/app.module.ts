@@ -10,6 +10,10 @@ import { Page1Component } from './pages/page1/page1.component';
 import { Page2Component } from './pages/page2/page2.component';
 import { Page3Component } from './pages/page3/page3.component';
 
+// Material Components
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +25,9 @@ import { Page3Component } from './pages/page3/page3.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+	AppRoutingModule,
+	MatGridListModule,
+	MatFormFieldModule
   ],
   providers: [SidebarService],
   bootstrap: [AppComponent]
